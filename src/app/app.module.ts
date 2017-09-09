@@ -15,6 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { SimmpliServiceProvider } from '../providers/simmpli-service/simmpli-service';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthServiceProvider
+    AuthServiceProvider,
+    SimmpliServiceProvider
   ]
 })
 export class AppModule {}

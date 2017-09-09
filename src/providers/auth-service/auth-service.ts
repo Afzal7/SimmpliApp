@@ -11,19 +11,31 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AuthServiceProvider {
 
+
 	currentUser;
 	baseUrl: String;
   isLoggedin: boolean;
   AuthToken;
   public token: any;
-
+  user;
   constructor(public http: Http) {
   	this.baseUrl = 'http://localhost:8100';
     console.log('Hello AuthServiceProvider Provider');
+    this.user = JSON.parse(localStorage.getItem('currentuser'));
+    console.log(this.user);
   }
+
+  
 
   public login(credentials){
   	return this.http.post(this.baseUrl+'/api/v1/sessions/', credentials).map(res => res.json());
   }
+
+
+   public logout(){
+  	return this.http.delete(this.baseUrl+'/api/v1/sessions/'+this.user.user.token.token).map(res => res.json());
+
+  }
+
 
 }
