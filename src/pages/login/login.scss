@@ -1,0 +1,77 @@
+page-login {
+	#login {
+  background: #1c2627 url("https://pexels.imgix.net/photos/14676/pexels-photo-14676.png?h%5Cu003d1000%5Cu0026w%5Cu003d1500%5Cu0026fit%5Cu003dcrop%5Cu0026mark%5Cu003dhttps%3A%2F%2Fassets.imgix.net%2F~text%3Ftxtclr%3Dfff%26txt%3DFree+Desktop+Wallpaper+Photos%26txtsize%3D120%26txtpad%3D20%26bg%3D80000000%26txtfont%3DAvenir-Heavy%26txtalign%3Dcenter%26w%3D1300%5Cu0026markalign%5Cu003dcenter%2Cmiddle%5Cu0026txt%5Cu003dpexels.com%5Cu0026txtalign%5Cu003dcenter%5Cu0026txtsize%5Cu003d60%5Cu0026txtclr%5Cu003deeffffff%5Cu0026txtfont%5Cu003dAvenir-Heavy%5Cu0026txtshad%5Cu003d10") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .scroll-content {
+  	.login-wrapper{
+  		display: table !important;
+    width: 100% !important;
+    // height: 100% !important;
+  	}
+    
+
+    form {
+      display: table-cell;
+      vertical-align: middle;
+
+      .header {
+        padding-bottom: 20px;
+
+        img {
+          display: block;
+          width: 25%;
+          margin: 0 auto;
+        }
+      }
+
+      .item-md {
+				    padding-left: 16px;
+				    padding-right: 0;
+				    position: relative;
+				    font-size: 1.6rem;
+				    font-weight: normal;
+				    text-transform: none;
+				    color: #000;
+				    background-color: rgba(33, 26, 26, 0.4);
+				    -webkit-box-shadow: none;
+				    box-shadow: none;
+				    -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+				    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+				}
+        .item-input ion-label {
+          margin: 0;
+          display: block;
+          overflow: hidden;
+          color: #fff;
+          -webkit-box-flex: 1;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          font-size: inherit;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+      }
+
+        .item-block{
+          background-color: rgba(33, 26, 26, 0.4) !important;
+        }
+				.text-input{
+					color: #fff;
+				}
+      .button.button-light.active, .button.button-light.activated {
+        color: #fff;
+        opacity: inherit;
+      }
+    }
+  }
+}
+button.submit-btn.disable-hover.item-button.button.button-md.button-default.button-default-md.button-block.button-block-md {
+    background: #fa4544;
+    padding: 20px;
+}
+
+}
